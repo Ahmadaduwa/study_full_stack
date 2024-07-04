@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      height: 748px;
+      width: 748px;
+      background-color: #000;
+      gap: 9px;
+      display: grid;
+      grid-template-columns: 320px auto 50px;
+      grid-template-rows: 414px auto 22px;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .white{
+      background-color: #F0F1EC;
+    }
+
+    .col2 {
+      grid-column: span 2;
+    }
+
+    .row2 {
+      grid-row: span 2;
+    }
+
+    .container2 {
+      display: grid;
+      grid-template-columns: 50px;
+      grid-template-rows: 130px auto;
+      gap: 9px;
+    }
+
+    .container3 {
+      display: grid;
+      grid-template-columns: 198px auto;
+      grid-template-rows: auto;
+    }
+
+    .blue {
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+    
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red"></div>
+    <div class="white col2"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="container2 row2">
+      <div class="blue"></div>
+      <div class="white "></div>
+    </div>
+    <div class="white"></div>
+    <div class="container3">
+      <div class="yellow"></div>
+      <div class="black"></div>
+    </div>
+  </div>
+</body>
+
+</html>
